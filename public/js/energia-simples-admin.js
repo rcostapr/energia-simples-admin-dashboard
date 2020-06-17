@@ -54,4 +54,10 @@
     e.preventDefault();
   });
 
+  // Enable popovers everywhere
+  $('[data-toggle="popover"]').popover();
+  $('.popover-dismiss').popover({
+    trigger: 'focus'
+  });
+
 })(jQuery); // End of use strict

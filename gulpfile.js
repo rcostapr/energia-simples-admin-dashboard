@@ -67,11 +67,12 @@ function modules() {
   // Sweetalert2
   var Sweetalert2 = gulp.src('./node_modules/sweetalert2/dist/*.js')
     .pipe(gulp.dest('./public/vendor/sweetalert2'));
-  // Sweetalert2 SCSS
-  var Sweetalert2SCSS = gulp.src('./node_modules/sweetalert2/src/sweetalert2.scss')
+  // Sweetalert SCSS
+  var SweetalertSCSS = gulp.src('./node_modules/sweetalert2/src/*.scss')
     .pipe(gulp.dest('./public/vendor/sweetalert2/scss'));
-
-
+  // Sweetalert2 SCSS
+  var Sweetalert2SCSS = gulp.src('./node_modules/sweetalert2/src/scss/*')
+    .pipe(gulp.dest('./public/vendor/sweetalert2/scss/scss'));
   // dataTables
   var dataTables = gulp.src([
     './node_modules/datatables.net/js/*.js',
@@ -91,7 +92,7 @@ function modules() {
     '!./node_modules/jquery/dist/core.js'
   ])
     .pipe(gulp.dest('./public/vendor/jquery'));
-  return merge(bootstrapJS, bootstrapSCSS, chartJS, dataTables, fontAwesome, jquery, jqueryEasing, toastr, toastrSCSS);
+  return merge(bootstrapJS, bootstrapSCSS, chartJS, dataTables, fontAwesome, jquery, jqueryEasing, toastr, toastrSCSS, Sweetalert2, SweetalertSCSS, Sweetalert2SCSS);
 }
 
 // CSS task

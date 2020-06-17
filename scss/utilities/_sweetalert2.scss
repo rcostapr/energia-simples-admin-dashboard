@@ -1,0 +1,14 @@
+.swal2-container {
+    &.swal2-top-end {
+        .swal2-popup {
+            width: 20em;
+            background-color: $popover-color;
+            .swal2-header {
+                .swal2-title {
+                    color: $gray-300;
+                    font-size: 1.375em;
+                }
+            }
+        }
+    }
+}

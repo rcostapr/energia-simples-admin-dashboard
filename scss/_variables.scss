@@ -33,6 +33,8 @@ $collapsed-selected: #002630 !default;
 $collapse-button: #004d61 !default;
 $nav-item-selected: rgba($blue-3, 0.8) !default;
 $brand-color: #ebe717 !default;
+$popover-color: #00252f !default;
+$popover-header-color: #001015 !default;
 
 // Custom Colors
 $brand-google: #ea4335;
@@ -44,8 +46,18 @@ $yiq-contrasted-threshold: 195 !default;
 // Typography
 $body-color: $gray-600 !default;
 
-$font-family-sans-serif: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif: "Nunito",
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji" !default;
 
 $font-weight-light: 300 !default;
 // $font-weight-base: 400;

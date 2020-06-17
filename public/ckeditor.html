@@ -507,11 +507,64 @@
                                     <div class="card-body">
                                         <div id="editor"></div>
                                         <div>
-                                            <button class="btn btn-primary" type="button">Popover</button>
+                                            <button
+                                                tabindex="0"
+                                                class="btn btn-lg btn-warning"
+                                                role="button"
+                                                data-toggle="popover"
+                                                data-trigger="focus"
+                                                title="Dismissible popover"
+                                                data-placement="top"
+                                                data-content="And here's some amazing content. It's very engaging. Right?"
+                                            >
+                                                Dismissible popover
+                                            </button>
                                             <button class="btn btn-success" type="button">Toaster</button>
                                             <button class="btn btn-info" type="button">Swit Alert</button>
-                                            <button class="btn btn-warning" type="button">Popover</button>
-                                            <button class="btn btn-danger" type="button">Popover</button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-secondary"
+                                                data-container="body"
+                                                data-toggle="popover"
+                                                data-placement="top"
+                                                data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                                            >
+                                                Popover on top
+                                            </button>
+
+                                            <button
+                                                type="button"
+                                                class="btn btn-secondary"
+                                                data-container="body"
+                                                data-toggle="popover"
+                                                data-placement="right"
+                                                data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                                            >
+                                                Popover on right
+                                            </button>
+
+                                            <button
+                                                type="button"
+                                                class="btn btn-secondary"
+                                                data-container="body"
+                                                data-toggle="popover"
+                                                data-placement="bottom"
+                                                data-content="Vivamus
+                                            sagittis lacus vel augue laoreet rutrum faucibus."
+                                            >
+                                                Popover on bottom
+                                            </button>
+
+                                            <button
+                                                type="button"
+                                                class="btn btn-secondary"
+                                                data-container="body"
+                                                data-toggle="popover"
+                                                data-placement="left"
+                                                data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                                            >
+                                                Popover on left
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -586,5 +639,6 @@
 
         <!-- Page level plugins -->
         <script src="vendor/toastr/toastr.min.js"></script>
+        <script src="vendor/sweetalert2/sweetalert2.all.min.js"></script>
     </body>
 </html>
