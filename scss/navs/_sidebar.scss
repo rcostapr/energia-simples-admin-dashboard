@@ -164,7 +164,7 @@
       height: 60px;
       background-image: url("/img/brand.png");
       background-repeat: no-repeat;
-      background-position: -55px -5px;
+      background-position: -55px -2px;
     }
   }
 
@@ -346,22 +346,12 @@
 @include media-breakpoint-down(sm) {
   .sidebar {
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 135px;
+    left: 0;
     z-index: 20;
 
     .sidebar-brand {
-      .sidebar-brand-icon i {
-        font-size: 2rem;
-      }
-
-      .sidebar-brand-text {
-        display: none;
-      }
-
-      .sidebar-brand-icon {
-        background-position: 15px 10px;
-      }
+      display: none !important;
     }
   }
 }

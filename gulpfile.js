@@ -64,6 +64,14 @@ function modules() {
   // Toastr SCSS
   var toastrSCSS = gulp.src('./node_modules/toastr/toastr.scss')
     .pipe(gulp.dest('./public/vendor/toastr/scss'));
+  // Sweetalert2
+  var Sweetalert2 = gulp.src('./node_modules/sweetalert2/dist/*.js')
+    .pipe(gulp.dest('./public/vendor/sweetalert2'));
+  // Sweetalert2 SCSS
+  var Sweetalert2SCSS = gulp.src('./node_modules/sweetalert2/src/sweetalert2.scss')
+    .pipe(gulp.dest('./public/vendor/sweetalert2/scss'));
+
+
   // dataTables
   var dataTables = gulp.src([
     './node_modules/datatables.net/js/*.js',
@@ -115,8 +123,8 @@ function css() {
 function js() {
   return gulp
     .src([
-      './js/*.js',
-      '!./js/*.min.js',
+      './public/js/*.js',
+      '!./public/js/*.min.js',
     ])
     .pipe(uglify())
     .pipe(header(banner, {
