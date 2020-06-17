@@ -2,7 +2,10 @@
 @import "variables.scss";
 
 // Import Bootstrap
-@import "../vendor/bootstrap/scss/bootstrap.scss";
+@import "../public/vendor/bootstrap/scss/bootstrap.scss";
+
+// Import Toastr
+@import "../public/vendor/toastr/scss/toastr.scss";
 
 // Import Custom SB Admin 2 Mixins and Components
 @import "mixins.scss";

@@ -29,7 +29,7 @@ const banner = ['/*!\n',
 function browserSync(done) {
   browsersync.init({
     server: {
-      baseDir: "./"
+      baseDir: "./public"
     },
     port: 3000
   });
@@ -44,45 +44,45 @@ function browserSyncReload(done) {
 
 // Clean vendor
 function clean() {
-  return del(["./vendor/"]);
+  return del(["./public/vendor/"]);
 }
 
 // Bring third party dependencies from node_modules into vendor directory
 function modules() {
   // Bootstrap JS
   var bootstrapJS = gulp.src('./node_modules/bootstrap/dist/js/*')
-    .pipe(gulp.dest('./vendor/bootstrap/js'));
+    .pipe(gulp.dest('./public/vendor/bootstrap/js'));
   // Bootstrap SCSS
   var bootstrapSCSS = gulp.src('./node_modules/bootstrap/scss/**/*')
-    .pipe(gulp.dest('./vendor/bootstrap/scss'));
+    .pipe(gulp.dest('./public/vendor/bootstrap/scss'));
   // ChartJS
   var chartJS = gulp.src('./node_modules/chart.js/dist/*.js')
-    .pipe(gulp.dest('./vendor/chart.js'));
+    .pipe(gulp.dest('./public/vendor/chart.js'));
   // Toastr
   var toastr = gulp.src('./node_modules/toastr/build/*.js')
-    .pipe(gulp.dest('./vendor/toastr'));
+    .pipe(gulp.dest('./public/vendor/toastr'));
   // Toastr SCSS
   var toastrSCSS = gulp.src('./node_modules/toastr/toastr.scss')
-    .pipe(gulp.dest('./vendor/toastr/scss'));
+    .pipe(gulp.dest('./public/vendor/toastr/scss'));
   // dataTables
   var dataTables = gulp.src([
     './node_modules/datatables.net/js/*.js',
     './node_modules/datatables.net-bs4/js/*.js',
     './node_modules/datatables.net-bs4/css/*.css'
   ])
-    .pipe(gulp.dest('./vendor/datatables'));
+    .pipe(gulp.dest('./public/vendor/datatables'));
   // Font Awesome
   var fontAwesome = gulp.src('./node_modules/@fortawesome/**/*')
-    .pipe(gulp.dest('./vendor'));
+    .pipe(gulp.dest('./public/vendor'));
   // jQuery Easing
   var jqueryEasing = gulp.src('./node_modules/jquery.easing/*.js')
-    .pipe(gulp.dest('./vendor/jquery-easing'));
+    .pipe(gulp.dest('./public/vendor/jquery-easing'));
   // jQuery
   var jquery = gulp.src([
     './node_modules/jquery/dist/*',
     '!./node_modules/jquery/dist/core.js'
   ])
-    .pipe(gulp.dest('./vendor/jquery'));
+    .pipe(gulp.dest('./public/vendor/jquery'));
   return merge(bootstrapJS, bootstrapSCSS, chartJS, dataTables, fontAwesome, jquery, jqueryEasing, toastr, toastrSCSS);
 }
 
@@ -102,12 +102,12 @@ function css() {
     .pipe(header(banner, {
       pkg: pkg
     }))
-    .pipe(gulp.dest("./css"))
+    .pipe(gulp.dest("./public/css"))
     .pipe(rename({
       suffix: ".min"
     }))
     .pipe(cleanCSS())
-    .pipe(gulp.dest("./css"))
+    .pipe(gulp.dest("./public/css"))
     .pipe(browsersync.stream());
 }
 
@@ -125,7 +125,7 @@ function js() {
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('./js'))
+    .pipe(gulp.dest('./public/js'))
     .pipe(browsersync.stream());
 }
 
@@ -133,7 +133,7 @@ function js() {
 function watchFiles() {
   gulp.watch("./scss/**/*", css);
   gulp.watch(["./js/**/*", "!./js/**/*.min.js"], js);
-  gulp.watch("./**/*.html", browserSyncReload);
+  gulp.watch("./**/public/*.html", browserSyncReload);
 }
 
 // Define complex tasks

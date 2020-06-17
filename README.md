@@ -1,31 +1,31 @@
-# [Start Bootstrap - SB Admin 2](https://startbootstrap.com/template-overviews/sb-admin-2/)
+# [Start Bootstrap - SB Admin 2](https://startbootstrap.com/template-overviews/energia-simples-admin/)
 
-[SB Admin 2](https://startbootstrap.com/template-overviews/sb-admin-2/) is an open source admin dashboard theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+[SB Admin 2](https://startbootstrap.com/template-overviews/energia-simples-admin/) is an open source admin dashboard theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
 
-For the legacy Bootstrap 3 version of this theme, you can view the [last stable release](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2/releases/tag/v3.3.7%2B1) of SB Admin 2 for Bootstrap 3.
+For the legacy Bootstrap 3 version of this theme, you can view the [last stable release](https://github.com/BlackrockDigital/startbootstrap-energia-simples-admin/releases/tag/v3.3.7%2B1) of SB Admin 2 for Bootstrap 3.
 
 ## Preview
 
-[![SB Admin 2 Preview](https://startbootstrap.com/assets/img/screenshots/themes/sb-admin-2.png)](https://blackrockdigital.github.io/startbootstrap-sb-admin-2/)
+[![SB Admin 2 Preview](https://startbootstrap.com/assets/img/screenshots/themes/energia-simples-admin.png)](https://blackrockdigital.github.io/startbootstrap-energia-simples-admin/)
 
-**[Launch Live Preview](https://blackrockdigital.github.io/startbootstrap-sb-admin-2/)**
+**[Launch Live Preview](https://blackrockdigital.github.io/startbootstrap-energia-simples-admin/)**
 
 ## Status
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-sb-admin-2/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-sb-admin-2.svg)](https://www.npmjs.com/package/startbootstrap-sb-admin-2)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-sb-admin-2.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-sb-admin-2)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-sb-admin-2/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-sb-admin-2)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-sb-admin-2/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-sb-admin-2?type=dev)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-energia-simples-admin/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/startbootstrap-energia-simples-admin.svg)](https://www.npmjs.com/package/startbootstrap-energia-simples-admin)
+[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-energia-simples-admin.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-energia-simples-admin)
+[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-energia-simples-admin/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-energia-simples-admin)
+[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-energia-simples-admin/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-energia-simples-admin?type=dev)
 
 ## Download and Installation
 
 To begin using this template, choose one of the following options to get started:
 
--   [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/sb-admin-2/)
--   Install via npm: `npm i startbootstrap-sb-admin-2`
--   Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-sb-admin-2.git`
--   [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2)
+-   [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/energia-simples-admin/)
+-   Install via npm: `npm i startbootstrap-energia-simples-admin`
+-   Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-energia-simples-admin.git`
+-   [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-energia-simples-admin)
 
 ## Usage
 
@@ -43,7 +43,7 @@ You must have npm installed globally in order to use this build environment. Thi
 
 ## Bugs and Issues
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/sb-admin-2/).
+Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-energia-simples-admin/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/energia-simples-admin/).
 
 ## About
 
