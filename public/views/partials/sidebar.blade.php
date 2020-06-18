@@ -38,8 +38,8 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Custom Components:</h6>
-                <a class="collapse-item{{ $_SERVER["REQUEST_URI"] == '/buttons.php' ? ' active' : '' }}" href="buttons.php">Buttons</a>
-                <a class="collapse-item{{ $_SERVER["REQUEST_URI"] == '/cards.php' ? ' active' : '' }}" href="cards.php">Cards</a>
+                <a class="collapse-item{{ $_SERVER["REQUEST_URI"] == '/buttons' ? ' active' : '' }}" href="buttons">Buttons</a>
+                <a class="collapse-item{{ $_SERVER["REQUEST_URI"] == '/cards' ? ' active' : '' }}" href="cards">Cards</a>
             </div>
         </div>
     </li>
@@ -53,10 +53,10 @@
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Custom Utilities:</h6>
-                <a class="collapse-item{{ $_SERVER["REQUEST_URI"] == '/utilities-color.php' ? ' active' : '' }}" href="utilities-color.php">Colors</a>
-                <a class="collapse-item{{ $_SERVER["REQUEST_URI"] == '/utilities-border.php' ? ' active' : '' }}" href="utilities-border.php">Borders</a>
-                <a class="collapse-item{{ $_SERVER["REQUEST_URI"] == '/utilities-animation.php' ? ' active' : '' }}" href="utilities-animation.php">Animations</a>
-                <a class="collapse-item{{ $_SERVER["REQUEST_URI"] == '/utilities-other.php' ? ' active' : '' }}" href="utilities-other.php">Other</a>
+                <a class="collapse-item{{ $_SERVER["REQUEST_URI"] == '/utilities-color' ? ' active' : '' }}" href="utilities-color">Colors</a>
+                <a class="collapse-item{{ $_SERVER["REQUEST_URI"] == '/utilities-border' ? ' active' : '' }}" href="utilities-border">Borders</a>
+                <a class="collapse-item{{ $_SERVER["REQUEST_URI"] == '/utilities-animation' ? ' active' : '' }}" href="utilities-animation">Animations</a>
+                <a class="collapse-item{{ $_SERVER["REQUEST_URI"] == '/utilities-other' ? ' active' : '' }}" href="utilities-other">Other</a>
             </div>
         </div>
     </li>
@@ -78,34 +78,34 @@
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Login Screens:</h6>
-                <a class="collapse-item{{ $_SERVER["REQUEST_URI"] == '/login.php' ? ' active' : '' }}" href="login.php">Login</a>
-                <a class="collapse-item{{ $_SERVER["REQUEST_URI"] == '/register.php' ? ' active' : '' }}" href="register.php">Register</a>
-                <a class="collapse-item{{ $_SERVER["REQUEST_URI"] == '/forgot-password.php' ? ' active' : '' }}" href="forgot-password.php">Forgot Password</a>
+                <a class="collapse-item{{ $_SERVER["REQUEST_URI"] == '/login' ? ' active' : '' }}" href="login">Login</a>
+                <a class="collapse-item{{ $_SERVER["REQUEST_URI"] == '/register' ? ' active' : '' }}" href="register">Register</a>
+                <a class="collapse-item{{ $_SERVER["REQUEST_URI"] == '/forgot-password' ? ' active' : '' }}" href="forgot-password">Forgot Password</a>
                 <div class="collapse-divider"></div>
                 <h6 class="collapse-header">Other Pages:</h6>
-                <a class="collapse-item{{ $_SERVER["REQUEST_URI"] == '/404.php' ? ' active' : '' }}" href="404.php">404 Page</a>
-                <a class="collapse-item{{ $_SERVER["REQUEST_URI"] == '/blank.php' ? ' active' : '' }}" href="blank.php">Blank Page</a>
+                <a class="collapse-item{{ $_SERVER["REQUEST_URI"] == '/404' ? ' active' : '' }}" href="404">404 Page</a>
+                <a class="collapse-item{{ $_SERVER["REQUEST_URI"] == '/blank' ? ' active' : '' }}" href="blank">Blank Page</a>
             </div>
         </div>
     </li>
 
     <!-- Nav Item - Charts -->
-    <li class="nav-item{{ $_SERVER["REQUEST_URI"] == '/charts.php' ? ' active' : '' }}">
-        <a class="nav-link" href="charts.php">
+    <li class="nav-item{{ $_SERVER["REQUEST_URI"] == '/charts' ? ' active' : '' }}">
+        <a class="nav-link" href="charts">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Charts</span></a>
     </li>
 
     <!-- Nav Item - Tables -->
-    <li class="nav-item{{ $_SERVER["REQUEST_URI"] == '/tables.php' ? ' active' : '' }}">
-        <a class="nav-link" href="tables.php">
+    <li class="nav-item{{ $_SERVER["REQUEST_URI"] == '/tables' ? ' active' : '' }}">
+        <a class="nav-link" href="tables">
             <i class="fas fa-fw fa-table"></i>
             <span>Tables</span></a>
     </li>
 
     <!-- Nav Item - CKEditor -->
-    <li class="nav-item{{ $_SERVER["REQUEST_URI"] == '/ckeditor.php' ? ' active' : '' }}">
-        <a class="nav-link" href="ckeditor.php">
+    <li class="nav-item{{ $_SERVER["REQUEST_URI"] == '/ckeditor' ? ' active' : '' }}">
+        <a class="nav-link" href="ckeditor">
             <i class="fas fa-text-width"></i>
             <span>CK Editor</span></a>
     </li>
