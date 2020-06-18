@@ -6,6 +6,7 @@ const browsersync = require("browser-sync").create();
 const cleanCSS = require("gulp-clean-css");
 const del = require("del");
 const gulp = require("gulp");
+const php = require('gulp-connect-php');
 const header = require("gulp-header");
 const merge = require("merge-stream");
 const plumber = require("gulp-plumber");
@@ -27,6 +28,18 @@ const banner = ['/*!\n',
 
 // BrowserSync
 function browserSync(done) {
+
+  browsersync.init({
+    proxy: "localhost:3003",
+    baseDir: "./public",
+    open: true,
+    notify: false
+  });
+
+  done();
+}
+
+/*
   browsersync.init({
     server: {
       baseDir: "./public"
@@ -35,10 +48,21 @@ function browserSync(done) {
   });
   done();
 }
+*/
 
 // BrowserSync reload
 function browserSyncReload(done) {
   browsersync.reload();
+  done();
+}
+
+// BrowserSync php
+function phpServer(done) {
+  php.server({
+    base: './public',
+    port: 3003,
+    keepalive: true
+  });
   done();
 }
 
@@ -142,13 +166,13 @@ function js() {
 function watchFiles() {
   gulp.watch("./scss/**/*", css);
   gulp.watch(["./js/**/*", "!./js/**/*.min.js"], js);
-  gulp.watch("./**/public/*.html", browserSyncReload);
+  gulp.watch("./**/public/*.php", browserSyncReload);
 }
 
 // Define complex tasks
 const vendor = gulp.series(clean, modules);
 const build = gulp.series(vendor, gulp.parallel(css, js));
-const watch = gulp.series(build, gulp.parallel(watchFiles, browserSync));
+const watch = gulp.series(build, gulp.parallel(watchFiles, phpServer, browserSync));
 
 // Export tasks
 exports.css = css;
