@@ -1,1 +1,35 @@
+# Modules
+composer.phar
+composer.lock
+package-lock.json
 node_modules
+vendor
+
+# App Logs
+/logs/
+/public/tmp/
+
+
+# App Repository
+/csv/
+
+#file upload folder
+/uploads/
+
+# App Cache
+/cache/
+
+# Config Files
+.vscode
+config.ini
+launch.json
+
+
+#Template
+/starter/
+
+
+# SSL
+ssl.ca
+ssl.cert
+ssl.key
