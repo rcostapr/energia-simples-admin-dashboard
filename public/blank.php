@@ -12,4 +12,4 @@ $metadescr = _("Energia Simples Admin Dashboard Template");
 $customScript = ['/js/pages/chart-area-demo.js', '/js/pages/chart-pie-demo.js', '/js/pages/index.js'];
 
 $blade = Blade::new ();
-echo $blade->make('pages.index', ['metatitle' => $metatitle, 'metadescr' => $metadescr, 'customScript' => $customScript])->render();
+echo $blade->make('pages.blank', ['metatitle' => $metatitle, 'metadescr' => $metadescr, 'customScript' => $customScript])->render();

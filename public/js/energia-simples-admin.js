@@ -60,4 +60,7 @@
     trigger: 'focus'
   });
 
+  var divtarget = $('.active').closest('.collapse').attr('id');
+  $("body").find('[aria-controls="' + divtarget + '"]').click();
+
 })(jQuery); // End of use strict

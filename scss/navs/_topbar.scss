@@ -193,10 +193,32 @@
 
         &:hover {
           color: $gray-500;
+          background-color: gainsboro;
         }
 
         &:active {
           color: $gray-600;
+          background-color: gainsboro;
+        }
+
+        .user-nav {
+          span {
+            color: $gray-700;
+          }
+
+        }
+      }
+
+      &.show {
+        .nav-link {
+          background-color: $blue;
+
+          .user-nav {
+            span {
+              color: $gray-300;
+            }
+
+          }
         }
       }
     }

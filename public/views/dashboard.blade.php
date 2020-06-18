@@ -8,13 +8,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="{{ $metadescr }}" />
-    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet" type="text/css">
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this page -->
+    <link href="/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" />
 
     <!-- Custom styles for this template-->
     <link href="/css/energia-simples-admin.min.css" rel="stylesheet" />
@@ -75,11 +77,14 @@
 
     <!-- CK Editor -->
     <script src="/js/components/ckeditor/ckeditor.js"></script>
-    <script src="/js/components/ckeditor.js"></script>
 
     <!-- Page level plugins -->
     <script src="/vendor/toastr/toastr.min.js"></script>
     <script src="/vendor/sweetalert2/sweetalert2.all.min.js"></script>
+    <script src="/vendor/chart.js/Chart.min.js"></script>
+    <script src="/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
 
     @if (is_array($customScript))
     @foreach ($customScript as $script)

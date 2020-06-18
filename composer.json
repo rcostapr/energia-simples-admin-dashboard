@@ -6,7 +6,8 @@
         "sinergi/browser-detector": "^6.1",
         "firebase/php-jwt": "^5.0",
         "mpdf/mpdf": "^8.0",
-        "php-ai/php-ml": "^0.8.0"
+        "php-ai/php-ml": "^0.8.0",
+        "illuminate/routing": "^7.16"
     },
     "require-dev": {
         "symfony/var-dumper": "^4.3"
