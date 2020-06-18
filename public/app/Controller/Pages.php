@@ -25,7 +25,7 @@ class Pages
     {
         $page = $request["page"];
         $template = 'pages.' . $page;
-        $customScript = ['/js/pages/chart-area-demo.js', '/js/pages/chart-pie-demo.js', '/js/pages/chart-bar-demo.js', '/js/pages/index.js', '/js/pages/ckeditor.js'];
+        $customScript = ['/js/pages/chart-area-demo.js', '/js/pages/chart-pie-demo.js', '/js/pages/chart-bar-demo.js', '/js/pages/index.js', '/js/pages/ckeditor.js', '/js/pages/datatables-demo.js'];
         $blade = Blade::new ();
         $html = $blade->make($template, ['metatitle' => $this->metatitle, 'metadescr' => $this->metadescr, 'customScript' => $customScript])->render();
         return $html;
