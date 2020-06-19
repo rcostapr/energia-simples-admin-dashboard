@@ -18,12 +18,15 @@
     <!-- Custom styles for this page -->
     <link href="/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" />
 
-    <!-- Custom styles for this template-->
+    <!-- Default styles for this template-->
     <link href="/css/energia-simples-admin.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template-->
+    <link href="/css/custom.css" rel="stylesheet" />
 
 </head>
 
-<body id="page-top">
+<body class="animated" id="page-top">
     <!-- Brand Mobiles -->
     @include('partials.brandmobile')
     <!-- End of Brand Mobiles -->
