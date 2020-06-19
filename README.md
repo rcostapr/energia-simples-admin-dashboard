@@ -1,7 +1,5 @@
 # [Energia Simples Admin Dashboard](https://clientes.simplesenergia.pt)
 
-[Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
-
 ## Download and Installation
 
 To begin using this template, choose one of the following options to get started:
