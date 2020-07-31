@@ -16,9 +16,9 @@ $gray-800: #5a5c69 !default;
 $gray-900: #3a3b45 !default;
 $black: #000 !default;
 
-$blue: #00303c !default;
-$blue-2: #244852 !default;
-$blue-3: #1f3f47 !default;
+$blue: #333333 !default;
+$blue-2: #4b4b4b !default;
+$blue-3: #4b4b4b !default;
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
 $pink: #e83e8c !default;
@@ -29,10 +29,10 @@ $green: #1cc88a !default;
 $teal: #20c9a6 !default;
 $cyan: #36b9cc !default;
 $collapsed-background: rgba($blue-2, 0.9) !default;
-$collapsed-selected: #002630 !default;
-$collapse-button: #004d61 !default;
+$collapsed-selected: #333333 !default;
+$collapse-button: #e8501e !default;
 $nav-item-selected: rgba($blue-3, 0.8) !default;
-$brand-color: #ebe717 !default;
+$brand-color: #ffffff !default;
 $popover-color: #00252f !default;
 $popover-header-color: #001015 !default;
 
@@ -46,18 +46,8 @@ $yiq-contrasted-threshold: 195 !default;
 // Typography
 $body-color: $gray-600 !default;
 
-$font-family-sans-serif: "Nunito",
--apple-system,
-BlinkMacSystemFont,
-"Segoe UI",
-Roboto,
-"Helvetica Neue",
-Arial,
-sans-serif,
-"Apple Color Emoji",
-"Segoe UI Emoji",
-"Segoe UI Symbol",
-"Noto Color Emoji" !default;
+$font-family-sans-serif: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 
 $font-weight-light: 300 !default;
 // $font-weight-base: 400;

@@ -1,5 +1,5 @@
 /*!
-* sweetalert2 v9.15.1
+* sweetalert2 v9.17.1
 * Released under the MIT License.
 */
 (function (global, factory) {
@@ -1695,7 +1695,7 @@
     onDestroy: undefined,
     scrollbarPadding: true
   };
-  var updatableParams = ['title', 'titleText', 'text', 'html', 'footer', 'icon', 'hideClass', 'customClass', 'allowOutsideClick', 'allowEscapeKey', 'showConfirmButton', 'showCancelButton', 'confirmButtonText', 'confirmButtonAriaLabel', 'confirmButtonColor', 'cancelButtonText', 'cancelButtonAriaLabel', 'cancelButtonColor', 'buttonsStyling', 'reverseButtons', 'imageUrl', 'imageWidth', 'imageHeight', 'imageAlt', 'progressSteps', 'currentProgressStep', 'onClose', 'onAfterClose', 'onDestroy'];
+  var updatableParams = ['title', 'titleText', 'text', 'html', 'footer', 'icon', 'hideClass', 'customClass', 'allowOutsideClick', 'allowEscapeKey', 'showConfirmButton', 'showCancelButton', 'confirmButtonText', 'confirmButtonAriaLabel', 'confirmButtonColor', 'cancelButtonText', 'cancelButtonAriaLabel', 'cancelButtonColor', 'buttonsStyling', 'reverseButtons', 'showCloseButton', 'closeButtonHtml', 'closeButtonAriaLabel', 'imageUrl', 'imageWidth', 'imageHeight', 'imageAlt', 'progressSteps', 'currentProgressStep', 'onClose', 'onAfterClose', 'onDestroy'];
   var deprecatedParams = {
     animation: 'showClass" and "hideClass'
   };
@@ -2263,8 +2263,8 @@
       return /^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9-]{2,24}$/.test(string) ? Promise.resolve() : Promise.resolve(validationMessage || 'Invalid email address');
     },
     url: function url(string, validationMessage) {
-      // taken from https://stackoverflow.com/a/3809435 with a small change from #1306
-      return /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,63}\b([-a-zA-Z0-9@:%_+.~#?&/=]*)$/.test(string) ? Promise.resolve() : Promise.resolve(validationMessage || 'Invalid URL');
+      // taken from https://stackoverflow.com/a/3809435 with a small change from #1306 and #2013
+      return /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-z]{2,63}\b([-a-zA-Z0-9@:%_+.~#?&/=]*)$/.test(string) ? Promise.resolve() : Promise.resolve(validationMessage || 'Invalid URL');
     }
   };
 
@@ -2329,12 +2329,15 @@
       params.onBeforeOpen(popup);
     }
 
+    var bodyStyles = window.getComputedStyle(document.body);
+    var initialBodyOverflow = bodyStyles.overflowY;
     addClasses$1(container, popup, params); // scrolling is 'hidden' until animation is done, after that 'auto'
 
     setScrollingVisibility(container, popup);
 
     if (isModal()) {
-      fixScrollContainer(container, params.scrollbarPadding);
+      fixScrollContainer(container, params.scrollbarPadding, initialBodyOverflow);
+      setAriaHidden();
     }
 
     if (!isToast() && !globalState.previousActiveElement) {
@@ -2371,12 +2374,11 @@
     }
   };
 
-  var fixScrollContainer = function fixScrollContainer(container, scrollbarPadding) {
+  var fixScrollContainer = function fixScrollContainer(container, scrollbarPadding, initialBodyOverflow) {
     iOSfix();
     IEfix();
-    setAriaHidden();
 
-    if (scrollbarPadding) {
+    if (scrollbarPadding && initialBodyOverflow !== 'hidden') {
       fixScrollbar();
     } // sweetalert2/issues/1247
 
@@ -3166,7 +3168,7 @@
     };
   });
   SweetAlert.DismissReason = DismissReason;
-  SweetAlert.version = '9.15.1';
+  SweetAlert.version = '9.17.1';
 
   var Swal = SweetAlert;
   Swal["default"] = Swal;

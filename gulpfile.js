@@ -73,30 +73,35 @@ function clean() {
 
 // Bring third party dependencies from node_modules into vendor directory
 function modules() {
+
   // Bootstrap JS
   var bootstrapJS = gulp.src('./node_modules/bootstrap/dist/js/*')
     .pipe(gulp.dest('./public/vendor/bootstrap/js'));
   // Bootstrap SCSS
   var bootstrapSCSS = gulp.src('./node_modules/bootstrap/scss/**/*')
     .pipe(gulp.dest('./public/vendor/bootstrap/scss'));
+
   // ChartJS
   var chartJS = gulp.src('./node_modules/chart.js/dist/*.js')
     .pipe(gulp.dest('./public/vendor/chart.js'));
+
   // Toastr
   var toastr = gulp.src('./node_modules/toastr/build/*.js')
     .pipe(gulp.dest('./public/vendor/toastr'));
   // Toastr SCSS
   var toastrSCSS = gulp.src('./node_modules/toastr/toastr.scss')
     .pipe(gulp.dest('./public/vendor/toastr/scss'));
+
   // Sweetalert2
-  var Sweetalert2 = gulp.src('./node_modules/sweetalert2/dist/*.js')
+  var sweetalert2 = gulp.src('./node_modules/sweetalert2/dist/*.js')
     .pipe(gulp.dest('./public/vendor/sweetalert2'));
   // Sweetalert SCSS
-  var SweetalertSCSS = gulp.src('./node_modules/sweetalert2/src/*.scss')
+  var sweetalertSCSS = gulp.src('./node_modules/sweetalert2/src/*.scss')
     .pipe(gulp.dest('./public/vendor/sweetalert2/scss'));
   // Sweetalert2 SCSS
-  var Sweetalert2SCSS = gulp.src('./node_modules/sweetalert2/src/scss/*')
+  var sweetalert2SCSS = gulp.src('./node_modules/sweetalert2/src/scss/*')
     .pipe(gulp.dest('./public/vendor/sweetalert2/scss/scss'));
+
   // dataTables
   var dataTables = gulp.src([
     './node_modules/datatables.net/js/*.js',
@@ -104,9 +109,11 @@ function modules() {
     './node_modules/datatables.net-bs4/css/*.css'
   ])
     .pipe(gulp.dest('./public/vendor/datatables'));
+
   // Font Awesome
   var fontAwesome = gulp.src('./node_modules/@fortawesome/**/*')
     .pipe(gulp.dest('./public/vendor'));
+
   // jQuery Easing
   var jqueryEasing = gulp.src('./node_modules/jquery.easing/*.js')
     .pipe(gulp.dest('./public/vendor/jquery-easing'));
@@ -116,7 +123,7 @@ function modules() {
     '!./node_modules/jquery/dist/core.js'
   ])
     .pipe(gulp.dest('./public/vendor/jquery'));
-  return merge(bootstrapJS, bootstrapSCSS, chartJS, dataTables, fontAwesome, jquery, jqueryEasing, toastr, toastrSCSS, Sweetalert2, SweetalertSCSS, Sweetalert2SCSS);
+  return merge(bootstrapJS, bootstrapSCSS, chartJS, dataTables, fontAwesome, jquery, jqueryEasing, toastr, toastrSCSS, sweetalert2, sweetalertSCSS, sweetalert2SCSS);
 }
 
 // CSS task
@@ -165,7 +172,7 @@ function js() {
 // Watch files
 function watchFiles() {
   gulp.watch("./scss/**/*", css);
-  gulp.watch(["./js/**/*", "!./js/**/*.min.js"], js);
+  gulp.watch(["./public/js/**/*", "!./public/js/**/*.min.js"], js);
   gulp.watch("./**/public/**/*.php", browserSyncReload);
 }
 
