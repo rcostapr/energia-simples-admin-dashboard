@@ -35,7 +35,7 @@
     "apexcharts": "^3.19.3",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.5.0",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "chartjs-plugin-annotation": "^0.5.7",
     "chartjs-plugin-annotation-fix": "^0.5.8",
     "chartjs-plugin-zoom": "^0.7.7",
