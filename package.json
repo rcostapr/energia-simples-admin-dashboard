@@ -41,7 +41,7 @@
     "chartjs-plugin-zoom": "^0.7.7",
     "datatables.net-bs4": "^1.10.21",
     "dragula": "^3.7.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-static": "^1.2.6",
     "gulp-connect-php": "^1.0.3",
     "jquery": "^3.5.0",
